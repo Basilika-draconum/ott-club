@@ -1,0 +1,50 @@
+.devices-block {
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+.devices {
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    opacity: 0.9;
+    margin-bottom: 16px;
+  }
+  &__description {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.8;
+    margin-bottom: 5px;
+  }
+  &__btn {
+    margin-top: 39px;
+  }
+  &__types {
+    margin-top: 34px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.samsung {
+  margin-right: 32px;
+  margin-left: 42px;
+}
+.android {
+  margin-top: 24px;
+  margin-right: 24px;
+  margin-left: 10px;
+}
+.lg {
+  margin-top: 24px;
+}

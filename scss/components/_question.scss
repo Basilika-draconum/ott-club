@@ -1,0 +1,38 @@
+.question-block {
+  padding-top: 16px;
+}
+.question {
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+  }
+}
+summary {
+  padding: 24px 0 20px;
+  border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
+  &::marker {
+    display: none;
+  }
+}
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details summary {
+  cursor: pointer;
+  position: relative;
+  padding-right: 60px;
+}
+details summary::before {
+  content: url("../../images/down.svg");
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}

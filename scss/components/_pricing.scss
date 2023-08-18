@@ -1,0 +1,54 @@
+@import "./description";
+
+.pricing-block {
+  border: 2px solid var(--accent-color);
+  padding: 18px 16px 32px;
+}
+
+.pricing {
+  &__title {
+    text-align: center;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    color: #ff1f1f;
+    font-size: 67px;
+    font-weight: 600;
+    line-height: 67px;
+  }
+  &__description {
+    margin-bottom: 24px;
+  }
+  &__condition {
+    margin-bottom: 32px;
+    &-item {
+    }
+  }
+  &__input {
+    width: 256px;
+    border-radius: 5px;
+    border: 1px solid #d0d0d1;
+    opacity: 0.9;
+    background: var(--c-white);
+    padding: 15px 16px;
+    margin-bottom: 16px;
+    &::placeholder {
+      color: rgba(60, 60, 67, 0.6);
+      font-size: 15px;
+      line-height: 1.5333px;
+      letter-spacing: 0.15px;
+      text-align: left;
+    }
+  }
+  &__button {
+    padding: 16px 32px;
+    line-height: normal;
+    width: 100%;
+  }
+}
+.eye {
+  width: 40px;
+  height: 50px;
+}

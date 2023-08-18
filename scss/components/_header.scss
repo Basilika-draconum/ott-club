@@ -1,3 +1,73 @@
-header{
-    background-color: aqua;
+header {
+  &__connect {
+  }
+}
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  @media screen and (min-width: 375px) {
+    padding-top: 44px;
+    padding-bottom: 13px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+}
+.logo {
+}
+.logo__img {
+  width: 56px;
+  height: 50.522px;
+  @media screen and (min-width: 768px) {
+    width: 64px;
+    height: 57.7px;
+  }
+  @media screen and (min-width: 990px) {
+    width: 72px;
+    height: 65px;
+  }
+  @media screen and (min-width: 1920px) {
+    width: 96px;
+    height: 86px;
+  }
+}
+.socials {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  &__link {
+  }
+}
+.header__btns {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 24px;
+  }
+  @media screen and (min-width: 1920px) {
+    gap: 32px;
+  }
+}
+.header__button {
+  background-color: transparent;
+  color: var(--c-white);
+  text-align: center;
+  font-weight: 500;
+  line-height: 140%;
+  &-signup {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+      border: none;
+    }
+  }
+  &-signin {
+    border: 2px solid var(--c-white);
+    border-radius: 5px;
+    padding: 9px 24px;
+  }
 }
