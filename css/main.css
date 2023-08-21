@@ -68,6 +68,18 @@ img {
   --c-white: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .header__connect {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 48px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .header-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,7 +134,13 @@ img {
 }
 @media screen and (min-width: 768px) {
   .socials {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -159,6 +177,15 @@ img {
   border: 2px solid var(--c-white);
   border-radius: 5px;
   padding: 9px 24px;
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
 .btn-accent {
