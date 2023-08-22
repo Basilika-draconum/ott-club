@@ -200,6 +200,12 @@ img {
   line-height: 1.4;
   overflow-wrap: normal;
 }
+@media screen and (min-width: 375px) {
+  .btn-accent {
+    font-size: 17px;
+    width: 100%;
+  }
+}
 
 .description {
   text-align: center;
@@ -243,6 +249,15 @@ img {
   .hero__description {
     margin-top: 13px;
     margin-bottom: 24px;
+  }
+}
+
+.condition {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .condition {
+    display: block;
   }
 }
 
