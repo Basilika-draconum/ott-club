@@ -218,6 +218,11 @@ img {
     font-size: 16px;
   }
 }
+@media screen and (min-width: 768px) {
+  .description {
+    text-align: left;
+  }
+}
 
 .hero {
   padding: 16px 0;
@@ -227,8 +232,29 @@ img {
     padding: 24px 0;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 48px 0 81px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__picture {
+    position: absolute;
+    top: 100px;
+    right: -170px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__img {
+    height: 317px;
+  }
+}
+.hero__btn {
+  width: 343px;
+}
 
 .hero__title {
+  position: relative;
   text-align: center;
   font-size: 24px;
   font-style: normal;
@@ -238,6 +264,13 @@ img {
 @media screen and (min-width: 375px) {
   .hero__title {
     font-size: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 32px;
+    width: 430px;
+    text-align: left;
   }
 }
 
@@ -251,6 +284,13 @@ img {
     margin-bottom: 24px;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero__description {
+    width: 430px;
+    margin-top: 24px;
+    margin-bottom: 34px;
+  }
+}
 
 .condition {
   display: none;
@@ -258,7 +298,48 @@ img {
 @media screen and (min-width: 768px) {
   .condition {
     display: block;
+    margin-bottom: 75px;
   }
+}
+.condition__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.condition__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.condition__description {
+  text-align: center;
+  font-weight: 600;
+}
+.condition__description-add {
+  display: none;
+}
+@media screen and (min-width: 990px) {
+  .condition__description-add {
+    display: block;
+  }
+}
+
+.icon-hero {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-bottom: 12px;
 }
 
 .description {
@@ -270,6 +351,11 @@ img {
 @media screen and (min-width: 375px) {
   .description {
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .description {
+    text-align: left;
   }
 }
 

@@ -3,5 +3,32 @@
 
   @media screen and (min-width: 768px) {
     display: block;
+    margin-bottom: 75px;
   }
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__description {
+    text-align: center;
+    font-weight: 600;
+    &-add {
+      display: none;
+      @media screen and (min-width: 990px) {
+        display: block;
+      }
+    }
+  }
+}
+.icon-hero {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-bottom: 12px;
 }

@@ -5,9 +5,29 @@
   @media screen and (min-width: 375px) {
     padding: 24px 0;
   }
+  @media screen and (min-width: 768px) {
+    padding: 48px 0 81px;
+  }
+
+  &__picture {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 100px;
+      right: -170px;
+    }
+  }
+  &__img {
+    @media screen and (min-width: 768px) {
+      height: 317px;
+    }
+  }
+  &__btn {
+    width: 343px;
+  }
 }
 
 .hero__title {
+  position: relative;
   text-align: center;
   font-size: 24px;
   font-style: normal;
@@ -16,6 +36,11 @@
   @media screen and (min-width: 375px) {
     font-size: 28px;
   }
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    width: 430px;
+    text-align: left;
+  }
 }
 .hero__description {
   margin-bottom: 24px;
@@ -23,5 +48,10 @@
   @media screen and (min-width: 375px) {
     margin-top: 13px;
     margin-bottom: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 430px;
+    margin-top: 24px;
+    margin-bottom: 34px;
   }
 }

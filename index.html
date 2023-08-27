@@ -55,7 +55,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Более 270 телеканалов в прямом эфире</h1>
-          <picture>
+          <picture class="hero__picture">
             <source
               media="(min-width:1920px )"
               srcset="
@@ -95,23 +95,61 @@
               media="(max-width:374px )"
               srcset="./images/mini.png 1x, ./images/header-mini@2x.png 2x"
             />
-            <img src="./images/mini.png" alt="Devices for TV" />
+            <img
+              class="hero__img"
+              src="./images/mini.png"
+              alt="Devices for TV"
+            />
           </picture>
           <p class="description hero__description">
             Национальные, познавательные, детские, кино, спортивные, новостные и
             многие другие каналы
           </p>
-          <button class="btn-accent">Протестировать 7 дней бесплатно</button>
+          <button class="btn-accent hero__btn">
+            Протестировать 7 дней бесплатно
+          </button>
         </div>
       </section>
       <!-- Condition -->
       <section class="condition">
         <div class="container">
-          <ul>
-            <li>hello</li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <ul class="condition__list">
+            <li class="condition__item">
+              <svg class="icon icon-hero" width="48" height="48">
+                <use xlink:href="./images/icons.svg#icon-hero-gift"></use>
+              </svg>
+              <p class="condition__description">Бесплатный тест</p>
+              <p class="condition__description-add">
+                7 дней бесплатного тестового просмотра
+              </p>
+            </li>
+            <li class="condition__item">
+              <svg class="icon icon-hero" width="48" height="48">
+                <use xlink:href="./images/icons.svg#icon-hero-device"></use>
+              </svg>
+              <p class="condition__description">5 устройств = 1 подписка</p>
+              <p class="condition__description-add">
+                Подключайте 5 устройств в одной подписке
+              </p>
+            </li>
+            <li class="condition__item">
+              <svg class="icon icon-hero" width="48" height="48">
+                <use xlink:href="./images/icons.svg#icon-hero-tv"></use>
+              </svg>
+              <p class="condition__description">Архив трансляций</p>
+              <p class="condition__description-add">
+                Смотрите 7 дней телеэфира в записи
+              </p>
+            </li>
+            <li class="condition__item">
+              <svg class="icon icon-hero" width="48" height="48">
+                <use xlink:href="./images/icons.svg#icon-hero-planet"></use>
+              </svg>
+              <p class="condition__description">Без привязки к месту</p>
+              <p class="condition__description-add">
+                Смотрите любимые фильмы и передачи в любой точке мира
+              </p>
+            </li>
           </ul>
         </div>
       </section>
