@@ -9,4 +9,12 @@
   @media screen and (min-width: 768px) {
     text-align: left;
   }
+  @media screen and (min-width: 990px) {
+    font-size: 18px;
+    width: 465px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+    width: 532px;
+  }
 }

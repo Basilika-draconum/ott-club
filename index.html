@@ -53,61 +53,64 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="container">
-          <h1 class="hero__title">Более 270 телеканалов в прямом эфире</h1>
-          <picture class="hero__picture">
-            <source
-              media="(min-width:1920px )"
-              srcset="
-                ./images/header-bigScreen.png    1x,
-                ./images/header-bigScreen@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width:1919px )"
-              srcset="
-                ./images/header-desktop.png    1x,
-                ./images/header-desktop@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width:1439px )"
-              srcset="
-                ./images/header-bigTablet.png    1x,
-                ./images/header-bigTablet@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width:989px )"
-              srcset="
-                ./images/header-tablet.png    1x,
-                ./images/header-tablet@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width:767px )"
-              srcset="
-                ./images/header-mobile.png    1x,
-                ./images/header-mobile@2x.png 2x
-              "
-            />
-            <source
-              media="(max-width:374px )"
-              srcset="./images/mini.png 1x, ./images/header-mini@2x.png 2x"
-            />
-            <img
-              class="hero__img"
-              src="./images/mini.png"
-              alt="Devices for TV"
-            />
-          </picture>
-          <p class="description hero__description">
-            Национальные, познавательные, детские, кино, спортивные, новостные и
-            многие другие каналы
-          </p>
-          <button class="btn-accent hero__btn">
-            Протестировать 7 дней бесплатно
-          </button>
+        <div class="container hero-block">
+          <div>
+            <h1 class="hero__title">Более 270 телеканалов в прямом эфире</h1>
+            <picture class="hero__picture">
+              <source
+                media="(min-width:1920px )"
+                srcset="
+                  ./images/header-bigScreen.png    1x,
+                  ./images/header-bigScreen@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width:1919px )"
+                srcset="
+                  ./images/header-desktop.png    1x,
+                  ./images/header-desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width:1439px )"
+                srcset="
+                  ./images/header-bigTablet.png    1x,
+                  ./images/header-bigTablet@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width:768px) and (max-width:989px )"
+                srcset="
+                  ./images/header-tablet.png    1x,
+                  ./images/header-tablet@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width:767px )"
+                srcset="
+                  ./images/header-mobile.png    1x,
+                  ./images/header-mobile@2x.png 2x
+                "
+              />
+              <source
+                media="(max-width:374px )"
+                srcset="./images/mini.png 1x, ./images/header-mini@2x.png 2x"
+              />
+              <img
+                class="hero__img"
+                src="./images/mini.png"
+                alt="Devices for TV"
+              />
+            </picture>
+            <p class="description hero__description">
+              Национальные, познавательные, детские, кино, спортивные, новостные
+              и многие другие каналы
+            </p>
+            <button class="btn-accent hero__btn">
+              Протестировать 7 дней бесплатно
+            </button>
+          </div>
+          <div class="clipped-image"></div>
         </div>
       </section>
       <!-- Condition -->
@@ -158,27 +161,36 @@
       <section class="pricing">
         <div class="container">
           <div class="pricing-block">
-            <img
-              src="./images/eye.png"
-              alt="Глаз"
-              width="40px"
-              height="50px"
-              class="eye"
-            />
-            <h2 class="pricing__title">
-              <span class="pricing__price">1€</span>/месяц
-            </h2>
-            <p class="description pricing__description">
-              Покупая подписку более, чем на 6 месяцев
-            </p>
-            <ul class="pricing__condition">
-              <li class="pricing__condition-item">Более 270 каналов</li>
-              <li class="pricing__condition-item">127 FullHD каналов</li>
-              <li class="pricing__condition-item">Режим Ultra TV Sport</li>
-              <li class="pricing__condition-item">7 дней архива каналов</li>
-              <li class="pricing__condition-item">5 устройств = 1 подписка</li>
-            </ul>
-            <form>
+            <div class="eye-wrap">
+              <img
+                src="./images/eye.png"
+                alt="Глаз"
+                width="40px"
+                height="50px"
+                class="eye"
+              />
+            </div>
+            <div class="pricing__subblock">
+              <div>
+                <h2 class="pricing__title">
+                  <span class="pricing__price">1€</span>/месяц
+                </h2>
+                <p class="description pricing__description">
+                  Покупая подписку более, чем на 6 месяцев
+                </p>
+              </div>
+
+              <ul class="pricing__condition">
+                <li class="pricing__condition-item">Более 270 каналов</li>
+                <li class="pricing__condition-item">127 FullHD каналов</li>
+                <li class="pricing__condition-item">Режим Ultra TV Sport</li>
+                <li class="pricing__condition-item">7 дней архива каналов</li>
+                <li class="pricing__condition-item">
+                  5 устройств = 1 подписка
+                </li>
+              </ul>
+            </div>
+            <form class="pricing__form">
               <input type="email" placeholder="Email" class="pricing__input" />
               <button type="submit" class="btn-accent pricing__button">
                 Подключить тариф
@@ -192,13 +204,13 @@
         <div class="container channel-block">
           <div class="channel-block__title">
             <h2 class="channel__title">ТВ - каналы</h2>
-            <img
+            <!-- <img
               src="./images/tickets.svg"
               alt="Tickets"
               class="channel-ticket"
               width="40px"
               height="40px"
-            />
+            /> -->
           </div>
           <p class="description channel__description">
             Национальные, познавательные, детские, кино, спортивные, новостные и
@@ -222,6 +234,15 @@
             <li class="channel__type-item">
               <button class="btn-accent channel__type-btn">Спорт</button>
             </li>
+            <li class="channel__type-item">
+              <button class="btn-accent channel__type-btn">Детские</button>
+            </li>
+            <li class="channel__type-item">
+              <button class="btn-accent channel__type-btn">Музыкальные</button>
+            </li>
+            <li class="channel__type-item">
+              <button class="btn-accent channel__type-btn">Новостные</button>
+            </li>
           </ul>
           <ul class="channel__all">
             <li class="channel__item channel__item-oneplusone">
@@ -230,7 +251,7 @@
                 alt="1+1"
                 width="62px"
                 height="35px"
-                class="oneplusone"
+                class="channel__img oneplusone"
               />
             </li>
             <li class="channel__item channel__item-zoom">
@@ -239,7 +260,7 @@
                 alt="zoom"
                 width="62px"
                 height="35px"
-                class="zoom"
+                class="channel__img zoom"
               />
             </li>
             <li class="channel__item channel__item-ukraine">
@@ -248,7 +269,7 @@
                 alt="zoom"
                 width="62px"
                 height="35px"
-                class="ukraine"
+                class="channel__img ukraine"
               />
             </li>
             <li class="channel__item channel__item-inter">
@@ -257,7 +278,7 @@
                 alt="zoom"
                 width="62px"
                 height="35px"
-                class="inter"
+                class="channel__img inter"
               />
             </li>
             <li class="channel__item channel__item-novyi">
@@ -266,7 +287,7 @@
                 alt="zoom"
                 width="62px"
                 height="35px"
-                class="novyi"
+                class="channel__img novyi"
               />
             </li>
             <li class="channel__item channel__item-ictv">
@@ -275,7 +296,45 @@
                 alt="zoom"
                 width="62px"
                 height="35px"
-                class="ictv"
+                class="channel__img ictv"
+              />
+            </li>
+            <li class="channel__item channel__item-tablet channel__item-film">
+              <img
+                src="./images/film.svg"
+                alt="film"
+                width="62px"
+                height="35px"
+                class="channel__img film"
+              />
+            </li>
+            <li class="channel__item channel__item-tablet channel__item-m">
+              <img
+                src="./images/m.svg"
+                alt="m"
+                width="62px"
+                height="35px"
+                class="channel__img m"
+              />
+            </li>
+            <li class="channel__item channel__item-desktop channel__item-tet">
+              <img
+                src="./images/tet.svg"
+                alt="tet"
+                width="62px"
+                height="35px"
+                class="channel__img tet"
+              />
+            </li>
+            <li
+              class="channel__item channel__item-desktop channel__item-2plus2"
+            >
+              <img
+                src="./images/2+2.svg"
+                alt="2plus2"
+                width="62px"
+                height="35px"
+                class="channel__img 2plus2"
               />
             </li>
           </ul>

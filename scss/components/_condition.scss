@@ -5,9 +5,17 @@
     display: block;
     margin-bottom: 75px;
   }
+  @media screen and (min-width: 990px) {
+    margin-top: 50px;
+  }
+
   &__list {
     display: flex;
     gap: 24px;
+    align-items: baseline;
+    @media screen and (min-width: 1440px) {
+      padding-top: 28px;
+    }
   }
   &__item {
     display: flex;
@@ -18,10 +26,19 @@
   &__description {
     text-align: center;
     font-weight: 600;
+    @media screen and (min-width: 990px) {
+      text-align: left;
+      text-wrap: nowrap;
+    }
     &-add {
       display: none;
       @media screen and (min-width: 990px) {
         display: block;
+        margin-top: 16px;
+      }
+      @media screen and (min-width: 1440px) {
+        text-align: center;
+        margin-top: 12px;
       }
     }
   }
@@ -31,4 +48,7 @@
   height: 48px;
   display: block;
   margin-bottom: 12px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 24px;
+  }
 }

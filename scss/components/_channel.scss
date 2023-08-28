@@ -1,11 +1,6 @@
 .channel-block {
   padding-top: 57px;
   padding-bottom: 18px;
-  &__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 .channel {
   &__title {
@@ -17,10 +12,37 @@
     font-weight: 500;
     line-height: 140%;
     opacity: 0.9;
+    @media screen and (min-width: 375px) {
+      font-size: 28px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+      text-align: left;
+    }
+    @media screen and (min-width: 990px) {
+      font-size: 38px;
+    }
+    &::after {
+      content: url("../../images/tickets.svg"); // ::before and ::after both require content
+      position: relative;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
   }
   &__description {
     margin-top: 8px;
     margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+      width: 510px;
+      margin-top: 16px;
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 660px;
+    }
   }
   &-ticket {
     width: 40px;
@@ -30,15 +52,27 @@
     display: flex;
     gap: 8px;
     margin-bottom: 40px;
-    &-item {
-    }
     &-acbtn {
       border: 2px solid var(--accent-color);
+      @media screen and (min-width: 1440px) {
+        font-size: 16px;
+        border: 1px solid var(--accent-color);
+      }
     }
     &-btn {
       background-color: transparent;
       border-radius: 5px;
       border: 2px solid rgba(255, 255, 255, 0.8);
+      &:hover {
+        border: 2px solid var(--accent-color);
+        background-color: var(--accent-color);
+      }
+      @media screen and (min-width: 990px) {
+        padding: 12px 18px;
+      }
+      @media screen and (min-width: 1440px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -47,11 +81,36 @@
     gap: 15.5px;
     flex-wrap: wrap;
     margin-bottom: 18px;
+    @media screen and (min-width: 1440px) {
+      gap: 31px 47px;
+    }
   }
   &__item {
     padding: 11px;
     border-radius: 5px;
     border: 1px solid #c6c6c8;
+    @media screen and (min-width: 375px) {
+      padding: 14px;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 21px;
+    }
+    @media screen and (min-width: 1440px) {
+      padding: 24px;
+    }
+    &-tablet {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
+    }
+    &-desktop {
+      display: none;
+      @media screen and (min-width: 990px) {
+        display: block;
+      }
+    }
+
     &-oneplusone {
       background: linear-gradient(180deg, #ff6961 0%, #d70015 100%);
     }
@@ -70,32 +129,65 @@
     &-ictv {
       background: linear-gradient(180deg, #7d7aff 0%, #3634a3 100%);
     }
+    &-film {
+      background: linear-gradient(180deg, #7d7aff 0%, #3634a3 100%);
+    }
+    &-m {
+      background: linear-gradient(180deg, #30db5b 0%, #248a3d 100%);
+    }
+    &-tet {
+      background: linear-gradient(180deg, #ffd426 0%, #b25000 100%);
+    }
+    &-2plus2 {
+      background: linear-gradient(180deg, #7d7aff 0%, #3634a3 100%);
+    }
   }
 }
-.oneplusone {
+
+.channel__img {
   width: 62px;
   height: 35px;
+  @media screen and (min-width: 375px) {
+    width: 74px;
+    height: 42px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 112px;
+    height: 63px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 131.556px;
+    height: 74px;
+  }
 }
-.zoom {
-  width: 62px;
-  height: 35px;
-}
-.ukraine {
-  width: 62px;
-  height: 35px;
-}
-.inter {
-  width: 62px;
-  height: 35px;
-}
-.novyi {
-  width: 62px;
-  height: 35px;
-}
-.ictv {
-  width: 62px;
-  height: 35px;
-}
+// .oneplusone {
+//   width: 62px;
+//   height: 35px;
+//   @media screen and (min-width: 375px) {
+//     width: 74.667px;
+//     height: 42px;
+//   }
+// }
+// .zoom {
+//   width: 62px;
+//   height: 35px;
+// }
+// .ukraine {
+//   width: 62px;
+//   height: 35px;
+// }
+// .inter {
+//   width: 62px;
+//   height: 35px;
+// }
+// .novyi {
+//   width: 62px;
+//   height: 35px;
+// }
+// .ictv {
+//   width: 62px;
+//   height: 35px;
+// }
 .wrap-btnshow {
   display: flex;
   justify-content: flex-end;
