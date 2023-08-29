@@ -2,14 +2,45 @@
 @import "./description";
 .hero-block {
   display: flex;
+  background-image: url("../../images/bats-mini.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media screen and (min-width: 375px) {
+    background-image: url("../../images/bats-mobile.png");
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url("../../images/bats-tablet.png");
+  }
+  @media screen and (min-width: 990px) {
+    background-image: url("../../images/bats-bigTablet.png");
+  }
+  @media screen and (min-width: 1440px) {
+    background-image: url("../../images/bats-desktop.png");
+  }
 }
 .hero {
+  background: rgb(76, 119, 204);
+  background: radial-gradient(
+    circle,
+    rgba(76, 119, 204, 1) 0%,
+    rgba(227, 59, 80, 0.2) 36%,
+    rgba(255, 0, 0, 0.2) 40%,
+    rgba(7, 14, 20, 1) 73%,
+    rgba(7, 14, 20, 1) 100%
+  );
   padding: 16px 0;
   @media screen and (min-width: 375px) {
     padding: 24px 0;
   }
   @media screen and (min-width: 768px) {
     padding: 48px 0 0;
+    background: radial-gradient(
+      circle,
+      rgba(227, 59, 80, 0.2) 5%,
+      rgba(255, 0, 0, 0.2) 10%,
+      rgba(7, 14, 20, 1) 33%,
+      rgba(7, 14, 20, 1) 100%
+    );
   }
   @media screen and (min-width: 1440px) {
     padding: 48px 0 65px;

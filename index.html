@@ -204,13 +204,6 @@
         <div class="container channel-block">
           <div class="channel-block__title">
             <h2 class="channel__title">ТВ - каналы</h2>
-            <!-- <img
-              src="./images/tickets.svg"
-              alt="Tickets"
-              class="channel-ticket"
-              width="40px"
-              height="40px"
-            /> -->
           </div>
           <p class="description channel__description">
             Национальные, познавательные, детские, кино, спортивные, новостные и
@@ -355,55 +348,63 @@
       <!-- //Devices -->
       <section class="devices">
         <div class="container devices-block">
-          <h2 class="devices__title">Смотрите на разных устройствах</h2>
-          <p class="description devices__description">
-            Подключайте подписку FULL и смотрите любимые каналы на 5
-            устройствах, среди которых: телевизор, компьютер, планшет или
-            смартфон
-          </p>
-          <picture>
-            <source
-              media="(min-width:1920px )"
-              srcset="./images/devices-bigScreen.png 1x, ./images/devices-bigScreen 2x.png 2x,"
-              type="image/png"
-            />
-            <source
-              media="(max-width:1919px )"
-              srcset="./images/devices-desktop.png 1x, ./images/devices-desktop 2x.png 2x,"
-              type="image/png"
-            />
-            <source
-              media="(max-width:1439px )"
-              srcset="./images/devices-bigTablet.png 1x, ./images/devices-bigTablet 2x.png 2x,"
-              type="image/png"
-            />
-            <source
-              media="(max-width:989px )"
-              srcset="./images/devices-tablet.png 1x, ./images/devices-tablet 2x.png 2x,"
-              type="image/png"
-            />
-            <source
-              media="(max-width:767px )"
-              srcset="./images/devices-mobile.png 1x, ./images/devices-mobile 2x.png 2x,"
-              type="image/png"
-            />
-            <source
-              media="(max-width:374px)"
-              srcset="./images/devices-mini.png 1x, ./images/devices-mini 2x.png 2x,"
-              type="image/png"
-            />
-            <img src="./images/devices-mini.png" alt="Группа дивайсов" />
-          </picture>
-          <button class="btn-accent devices__btn">
-            Протестировать 7 дней бесплатно
-          </button>
+          <div class="devices__visual">
+            <div>
+              <h2 class="devices__title">Смотрите на разных устройствах</h2>
+              <p class="description devices__description">
+                Подключайте подписку FULL и смотрите любимые каналы на 5
+                устройствах, среди которых: телевизор, компьютер, планшет или
+                смартфон
+              </p>
+              <picture class="devices__picture">
+                <source
+                  media="(min-width:1920px )"
+                  srcset="./images/devices-bigScreen.png 1x, ./images/devices-bigScreen 2x.png 2x,"
+                  type="image/png"
+                />
+                <source
+                  media="(max-width:1919px )"
+                  srcset="./images/devices-desktop.png 1x, ./images/devices-desktop 2x.png 2x,"
+                  type="image/png"
+                />
+                <source
+                  media="(max-width:1439px )"
+                  srcset="./images/devices-bigTablet.png 1x, ./images/devices-bigTablet 2x.png 2x,"
+                  type="image/png"
+                />
+                <source
+                  media="(max-width:989px )"
+                  srcset="./images/devices-tablet.png 1x, ./images/devices-tablet 2x.png 2x,"
+                  type="image/png"
+                />
+                <source
+                  media="(max-width:767px )"
+                  srcset="./images/devices-mobile.png 1x, ./images/devices-mobile 2x.png 2x,"
+                  type="image/png"
+                />
+                <source
+                  media="(max-width:374px)"
+                  srcset="./images/devices-mini.png 1x, ./images/devices-mini 2x.png 2x,"
+                  type="image/png"
+                />
+                <img src="./images/devices-mini.png" alt="Группа дивайсов" />
+              </picture>
+
+              <button class="btn-accent devices__btn">
+                Протестировать 7 дней бесплатно
+              </button>
+            </div>
+
+            <div class="devices__clip"></div>
+          </div>
           <ul class="devices__types">
-            <li class="samsung">
+            <li class="lg">
               <img
-                src="./images/samsung.svg"
+                src="./images/lg.svg"
                 alt="Самсунг"
                 width="125px"
                 height="23px"
+                class="type-lg"
               />
             </li>
             <li class="ios">
@@ -412,6 +413,7 @@
                 alt="Айос"
                 width="125px"
                 height="23px"
+                class="type-ios"
               />
             </li>
             <li class="android">
@@ -420,14 +422,16 @@
                 alt="Андроид"
                 width="125px"
                 height="23px"
+                class="type-android"
               />
             </li>
-            <li class="lg">
+            <li class="samsung">
               <img
-                src="./images/lg.svg"
+                src="./images/samsung.svg"
                 alt="Лджи"
                 width="125px"
                 height="23px"
+                class="type-samsung"
               />
             </li>
           </ul>
@@ -437,7 +441,7 @@
       <section class="question">
         <div class="container question-block">
           <h2 class="question__title">Популярные вопросы</h2>
-          <div>
+          <div class="question__all">
             <details>
               <summary>
                 Как подключить подписку OTTCLUB или продлить ее?
@@ -474,7 +478,7 @@
             </details>
             <details>
               <summary>
-                Как посмотреть передачу, которая была в эфире ранее?
+                Какая скорость соединения необходима для просмотра каналов?
               </summary>
               <p>
                 Для просмотра передачи, которая была в эфире ранее на платформе
@@ -492,112 +496,133 @@
                 перед покупкой подписки.
               </p>
             </details>
+            <details>
+              <summary>
+                Как посмотреть передачу, которая была в эфире ранее?
+              </summary>
+              <p>
+                Для просмотра передачи, которая была в эфире ранее на платформе
+                OTTCLUB: Откройте приложение OTTCLUB на вашем устройстве.
+                Перейдите в раздел "Архив" или "Видеотека", выберите
+                интересующую передачу, нажмите на запись и наслаждайтесь
+                просмотром!
+              </p>
+            </details>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container footer-block">
-        <ul class="footer__info">
-          <li>
-            <a
-              class="footer__info-item"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              >О нас</a
-            >
-          </li>
-          <li>
-            <a
-              class="footer__info-item"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Пользовательское соглашение</a
-            >
-          </li>
-          <li>
-            <a
-              class="footer__info-item"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Политика конфиденциальности</a
-            >
-          </li>
-          <li>
-            <a
-              class="footer__info-item"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              >ТВ-каналам</a
-            >
-          </li>
-          <li>
-            <a
-              class="footer__info-item"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Проверка скорости</a
-            >
-          </li>
-          <li>
-            <a
-              class="footer__info-item"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Правила оформления подписки</a
-            >
-          </li>
-        </ul>
-        <h3 class="footer__title-help">Помощь</h3>
-        <ul class="footer__contacts">
-          <li>
-            <a class="footer__contact" href="tel:+442045772169"
-              >+442045772169 (Англия)</a
-            >
-          </li>
-          <li>
-            <a class="footer__contact" href="tel:+420255708953"
-              >+420255708953 (Европа)</a
-            >
-          </li>
-          <li>
-            <a class="footer__contact" href="tel:+97233751723"
-              >+97233751723 (Израиль)</a
-            >
-          </li>
-          <li>
-            <a class="footer__contact" href="mailto:support@ottclub.cc"
-              >support@ottclub.cc</a
-            >
-          </li>
-        </ul>
-        <p class="footer__support-title">Чат-поддержка</p>
-        <ul class="social">
-          <li class="social__item">
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              ><img
-                class="social__img"
-                src="./images/whatsapp.svg"
-                alt="whatsapp"
-                width="32px"
-                height="32px"
-            /></a>
-          </li>
-          <li class="social__item">
-            <a href="#" target="_blank" rel="noopener noreferrer"
-              ><img
-                class="social__img"
-                src="./images/telegram.svg"
-                alt="telegram"
-            /></a>
-          </li>
-        </ul>
+        <div class="footer-block-first">
+          <ul class="footer__info">
+            <li>
+              <a
+                class="footer__info-item"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >О нас</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer__info-item"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Пользовательское соглашение</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer__info-item"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer__info-item"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >ТВ-каналам</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer__info-item"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Проверка скорости</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer__info-item"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Правила оформления подписки</a
+              >
+            </li>
+          </ul>
+          <div class="footer-second">
+            <div>
+              <h3 class="footer__title-help">Помощь</h3>
+              <ul class="footer__contacts">
+                <li>
+                  <a class="footer__contact" href="tel:+442045772169"
+                    >+442045772169 (Англия)</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__contact" href="tel:+420255708953"
+                    >+420255708953 (Европа)</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__contact" href="tel:+97233751723"
+                    >+97233751723 (Израиль)</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__contact" href="mailto:support@ottclub.cc"
+                    >support@ottclub.cc</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__support">
+              <p class="footer__support-title">Чат-поддержка</p>
+              <ul class="social">
+                <li class="social__item">
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    ><img
+                      class="social__img"
+                      src="./images/whatsapp.svg"
+                      alt="whatsapp"
+                      width="32px"
+                      height="32px"
+                  /></a>
+                </li>
+                <li class="social__item">
+                  <a href="#" target="_blank" rel="noopener noreferrer"
+                    ><img
+                      class="social__img"
+                      src="./images/telegram.svg"
+                      alt="telegram"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
         <ul class="payment">
           <li><img src="./images/visa.svg" alt="Виза" /></li>
           <li><img src="./images/mastercard.svg" alt="Мастеркард" /></li>
@@ -605,10 +630,12 @@
           <li><img src="./images/paysera.svg" alt="Пейсера" /></li>
           <li><img src="./images/sepa.svg" alt="Сепа" /></li>
         </ul>
-        <p class="footer__company footer__company-up">
-          &#169; 2021-2022 COMPANY NAME LTD
-        </p>
-        <p class="footer__company">Company number 1221514</p>
+        <div class="footer-company">
+          <p class="footer__company footer__company-up">
+            &#169; 2021-2022 COMPANY NAME LTD
+          </p>
+          <p class="footer__company">Company number 1221514</p>
+        </div>
       </div>
     </footer>
   </body>

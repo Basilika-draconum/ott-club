@@ -3,6 +3,10 @@
   padding-bottom: 18px;
 }
 .channel {
+  background-image: url("../../images/channel-mini.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   &__title {
     color: #fff;
     text-align: center;
@@ -81,6 +85,9 @@
     gap: 15.5px;
     flex-wrap: wrap;
     margin-bottom: 18px;
+    @media screen and (min-width: 990px) {
+      gap: 32px 22px;
+    }
     @media screen and (min-width: 1440px) {
       gap: 31px 47px;
     }
@@ -154,6 +161,10 @@
   @media screen and (min-width: 768px) {
     width: 112px;
     height: 63px;
+  }
+  @media screen and (min-width: 990px) {
+    width: 117px;
+    height: 66px;
   }
   @media screen and (min-width: 1440px) {
     width: 131.556px;

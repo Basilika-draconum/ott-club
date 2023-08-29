@@ -2,11 +2,48 @@
   padding-top: 16px;
 }
 .question {
+  background: var(--background-color);
+  background: linear-gradient(
+    223deg,
+    rgba(7, 14, 20, 1) 70%,
+    rgba(0, 142, 255, 0.2) 100%
+  );
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      223deg,
+      rgba(7, 14, 20, 1) 60%,
+      rgba(0, 142, 255, 0.2) 100%
+    );
+  }
+  @media screen and (min-width: 1440px) {
+    background: linear-gradient(
+      223deg,
+      rgba(7, 14, 20, 1) 72%,
+      rgba(0, 142, 255, 0.2) 100%
+    );
+  }
   &__title {
     text-align: center;
     font-size: 24px;
     font-weight: 500;
-    line-height: 140%;
+    line-height: 1.4;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+      font-size: 30px;
+    }
+    @media screen and (min-width: 990px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__all {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    @media screen and (min-width: 1440px) {
+      column-gap: 130px;
+    }
   }
 }
 summary {
@@ -14,6 +51,17 @@ summary {
   border-bottom: 1px solid rgba($color: #fff, $alpha: 0.1);
   &::marker {
     display: none;
+  }
+}
+details {
+  @media screen and (min-width: 768px) {
+    width: 332px;
+  }
+  @media screen and (min-width: 990px) {
+    width: 427px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 468px;
   }
 }
 details > summary {
@@ -26,6 +74,9 @@ details summary {
   cursor: pointer;
   position: relative;
   padding-right: 60px;
+  @media screen and (min-width: 990px) {
+    padding-right: 80px;
+  }
 }
 details summary::before {
   content: url("../../images/down.svg");
