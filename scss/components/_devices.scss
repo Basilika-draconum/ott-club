@@ -3,6 +3,21 @@
   padding-bottom: 17px;
 }
 .devices {
+  background: rgba(7, 14, 20, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(189, 31, 168, 0.4) 13%,
+    rgba(0, 146, 255, 0.2) 34%,
+    rgba(7, 14, 20, 1) 80%
+  );
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(
+      180deg,
+      rgba(189, 31, 168, 0.2) 13%,
+      rgba(0, 146, 255, 0.2) 34%,
+      rgba(7, 14, 20, 1) 80%
+    );
+  }
   &__visual {
     display: flex;
   }

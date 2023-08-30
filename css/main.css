@@ -860,12 +860,31 @@ img {
 .channel-block {
   padding-top: 57px;
   padding-bottom: 18px;
+  background-image: url("../../images/web-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+@media screen and (min-width: 990px) {
+  .channel-block {
+    background-size: auto 500px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .channel-block {
+    background-size: auto 700px;
+  }
 }
 
 .channel {
-  background-image: url("../../images/channel-mini.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(7, 14, 20);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, rgb(7, 14, 20)), color-stop(34%, rgba(0, 146, 255, 0.2)), color-stop(80%, rgba(189, 31, 168, 0.4)));
+  background: linear-gradient(180deg, rgb(7, 14, 20) 13%, rgba(0, 146, 255, 0.2) 34%, rgba(189, 31, 168, 0.4) 80%);
+}
+@media screen and (min-width: 768px) {
+  .channel {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, rgb(7, 14, 20)), color-stop(34%, rgba(0, 146, 255, 0.2)), color-stop(80%, rgba(189, 31, 168, 0.2)));
+    background: linear-gradient(180deg, rgb(7, 14, 20) 13%, rgba(0, 146, 255, 0.2) 34%, rgba(189, 31, 168, 0.2) 80%);
+  }
 }
 .channel__title {
   color: #fff;
@@ -1118,6 +1137,17 @@ img {
   padding-bottom: 17px;
 }
 
+.devices {
+  background: rgb(7, 14, 20);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, rgba(189, 31, 168, 0.4)), color-stop(34%, rgba(0, 146, 255, 0.2)), color-stop(80%, rgb(7, 14, 20)));
+  background: linear-gradient(180deg, rgba(189, 31, 168, 0.4) 13%, rgba(0, 146, 255, 0.2) 34%, rgb(7, 14, 20) 80%);
+}
+@media screen and (min-width: 768px) {
+  .devices {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(13%, rgba(189, 31, 168, 0.2)), color-stop(34%, rgba(0, 146, 255, 0.2)), color-stop(80%, rgb(7, 14, 20)));
+    background: linear-gradient(180deg, rgba(189, 31, 168, 0.2) 13%, rgba(0, 146, 255, 0.2) 34%, rgb(7, 14, 20) 80%);
+  }
+}
 .devices__visual {
   display: -webkit-box;
   display: -ms-flexbox;
