@@ -2,19 +2,19 @@
 
 .pricing-block {
   padding: 18px 16px 32px;
-  background-image: url("../../images/frame320.svg");
+  background-image: url("./../images/frame320.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   @media screen and (min-width: 768px) {
     padding: 18px 52px 32px;
-    background-image: url("../../images/frame768.svg");
+    background-image: url("./../images/frame768.svg");
   }
   @media screen and (min-width: 990px) {
     padding: 20px 142px 32px;
-    background-image: url("../../images/frame990.svg");
+    background-image: url("./../images/frame990.svg");
   }
   @media screen and (min-width: 1440px) {
-    background-image: url("../../images/frame1440.svg");
+    background-image: url("./../images/frame1440.svg");
     padding: 20px 172px 117px;
   }
 }
@@ -79,7 +79,7 @@
   }
   &__condition {
     margin-bottom: 25px;
-    list-style-image: url(../../images/check.svg);
+    list-style-image: url("./../images/check.svg");
     font-size: 15px;
     padding-left: 32px;
     @media screen and (min-width: 375px) {

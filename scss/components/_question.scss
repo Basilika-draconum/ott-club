@@ -79,7 +79,7 @@ details summary {
   }
 }
 details summary::before {
-  content: url("../../images/down.svg");
+  content: url("./../images/down.svg");
   position: absolute;
   top: 50%;
   right: 0;

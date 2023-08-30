@@ -251,28 +251,28 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("../../images/bats-mini.png");
+  background-image: url("./../images/bats-mini.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media screen and (min-width: 375px) {
   .hero-block {
-    background-image: url("../../images/bats-mobile.png");
+    background-image: url("./../images/bats-mobile.png");
   }
 }
 @media screen and (min-width: 768px) {
   .hero-block {
-    background-image: url("../../images/bats-tablet.png");
+    background-image: url("./../images/bats-tablet.png");
   }
 }
 @media screen and (min-width: 990px) {
   .hero-block {
-    background-image: url("../../images/bats-bigTablet.png");
+    background-image: url("./../images/bats-bigTablet.png");
   }
 }
 @media screen and (min-width: 1440px) {
   .hero-block {
-    background-image: url("../../images/bats-desktop.png");
+    background-image: url("./../images/bats-desktop.png");
   }
 }
 
@@ -412,7 +412,7 @@ img {
     display: block;
     width: 100%;
     height: 317px;
-    background-image: url("../../images/header-tablet.png");
+    background-image: url("./../images/header-tablet.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -423,7 +423,7 @@ img {
 }
 @media screen and (min-width: 990px) {
   .clipped-image {
-    background-image: url("../../images/header-bigTablet.png");
+    background-image: url("./../images/header-bigTablet.png");
     top: -20px;
     left: 80px;
   }
@@ -546,25 +546,25 @@ img {
 
 .pricing-block {
   padding: 18px 16px 32px;
-  background-image: url("../../images/frame320.svg");
+  background-image: url("./../images/frame320.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
 @media screen and (min-width: 768px) {
   .pricing-block {
     padding: 18px 52px 32px;
-    background-image: url("../../images/frame768.svg");
+    background-image: url("./../images/frame768.svg");
   }
 }
 @media screen and (min-width: 990px) {
   .pricing-block {
     padding: 20px 142px 32px;
-    background-image: url("../../images/frame990.svg");
+    background-image: url("./../images/frame990.svg");
   }
 }
 @media screen and (min-width: 1440px) {
   .pricing-block {
-    background-image: url("../../images/frame1440.svg");
+    background-image: url("./../images/frame1440.svg");
     padding: 20px 172px 117px;
   }
 }
@@ -650,7 +650,7 @@ img {
 }
 .pricing__condition {
   margin-bottom: 25px;
-  list-style-image: url(../../images/check.svg);
+  list-style-image: url("./../images/check.svg");
   font-size: 15px;
   padding-left: 32px;
 }
@@ -861,7 +861,7 @@ img {
 .channel-block {
   padding-top: 57px;
   padding-bottom: 18px;
-  background-image: url("../../images/web-mobile.svg");
+  background-image: url("./../images/web-mobile.svg");
   background-repeat: no-repeat;
   background-position: left bottom;
 }
@@ -914,7 +914,7 @@ img {
   }
 }
 .channel__title::after {
-  content: url("../../images/tickets.svg");
+  content: url("./../images/tickets.svg");
   position: relative;
   z-index: 10;
   top: 0;
@@ -1279,7 +1279,7 @@ img {
     display: block;
     width: 100%;
     height: 282px;
-    background-image: url("../../images/devices-tablet.png");
+    background-image: url("./../images/devices-tablet.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1290,7 +1290,7 @@ img {
 }
 @media screen and (min-width: 990px) {
   .devices__clip {
-    background-image: url("../../images/devices-bigTablet.png");
+    background-image: url("./../images/devices-bigTablet.png");
     top: 0;
     left: 95px;
     height: 355px;
@@ -1298,7 +1298,7 @@ img {
 }
 @media screen and (min-width: 1440px) {
   .devices__clip {
-    background-image: url("../../images/devices-desktop.png");
+    background-image: url("./../images/devices-desktop.png");
     top: 0;
     left: 55px;
     height: 355px;
@@ -1477,7 +1477,7 @@ details summary {
 }
 
 details summary::before {
-  content: url("../../images/down.svg");
+  content: url("./../images/down.svg");
   position: absolute;
   top: 50%;
   right: 0;
@@ -1512,7 +1512,7 @@ details summary::before {
 }
 
 .footer-block {
-  background-image: url(../../images/footer-mini.png);
+  background-image: url("./../images/footer-mini.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -1520,22 +1520,22 @@ details summary::before {
 }
 @media screen and (min-width: 375px) {
   .footer-block {
-    background-image: url(../../images/footer-mobile.png);
+    background-image: url("./../images/footer-mobile.png");
   }
 }
 @media screen and (min-width: 768px) {
   .footer-block {
-    background-image: url(../../images/footer-tablet.png);
+    background-image: url("./../images/footer-tablet.png");
   }
 }
 @media screen and (min-width: 990px) {
   .footer-block {
-    background-image: url(../../images/footer-bigTablet.png);
+    background-image: url("./../images/footer-bigTablet.png");
   }
 }
 @media screen and (min-width: 1440px) {
   .footer-block {
-    background-image: url(../../images/footer-desktop.png);
+    background-image: url("./../images/footer-desktop.png");
     background-size: contain;
   }
 }

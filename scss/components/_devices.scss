@@ -112,7 +112,7 @@
       display: block;
       width: 100%;
       height: 282px;
-      background-image: url("../../images/devices-tablet.png");
+      background-image: url("./../images/devices-tablet.png");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -121,13 +121,13 @@
       left: 40px;
     }
     @media screen and (min-width: 990px) {
-      background-image: url("../../images/devices-bigTablet.png");
+      background-image: url("./../images/devices-bigTablet.png");
       top: 0;
       left: 95px;
       height: 355px;
     }
     @media screen and (min-width: 1440px) {
-      background-image: url("../../images/devices-desktop.png");
+      background-image: url("./../images/devices-desktop.png");
       top: 0;
       left: 55px;
       height: 355px;
